@@ -1,0 +1,367 @@
+<html>
+<head>
+    <titel></titel>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+    body {
+        background-image: url("yarnam.jpg");
+        background-repeat: no-repeat;
+        background-attachment: inherit;
+        background-size: cover;
+    }
+
+    .navbar { /*Menu Background */
+        background-color: rgb(159, 226, 191,0.2); /*White wit opacity*/
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+    }
+
+    .itemnodrop { /*Items in the Menu without Drop Menu*/
+        float: left;
+        font-size: 20px;
+        color: cadetblue;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 14px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        background-color: #F0F3F4;
+        transition: all 0.5s ease;
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+    }
+
+    .itemwithdrop { /*Items in the Menu with Drop Menu*/
+        font-size: 16px;
+        color: antiquewhite;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+    }
+
+
+    .dropdown { /*Items in the Menu with Drop Menu */
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropbtn { /*buttons Design in the Menu*/
+        border: none;
+        padding: 14px 32px;
+        background-color: inherit;
+        font-family: inherit;
+    }
+    /*----------------------------------------Hover on the button make the size of the Font bigger--------------------------------------------*/
+    .itemwithdrop:hover { /* Buttons on hover */
+        color: white;
+        font-size: 20px;
+    }
+
+    .dropdown:hover .dropbtn:hover { /* Buttons on hover */
+        background-color: red;
+        border-bottom: 3px solid white;
+        border-radius: 10px;
+    }
+
+    .itemnodrop:hover { /*Home Link On Hover*/
+        color: pink;
+        font-size: 22px;
+        background-color: cadetblue;
+        border-bottom: 3px solid white;
+        border-radius: 10px;
+    }
+
+    .dropdown-content { /*The Items inside the dropbox */
+        display: none;
+        position: relative;
+        background-color: #126478;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-bottom: 2px solid white;
+        border-radius: 10px;
+    }
+
+        .dropdown-content a { /* Link inside the dropbox*/
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            border-bottom: 2px solid white;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+        }
+
+            .dropdown-content a:hover { /*Mouse Hover on dropbox items*/
+                background-color: black;
+                color: orange;
+                font-family: "Courier New", monospace;
+                font-weight: bold;
+            }
+
+    .dropdown:hover .dropdown-content { /*dropdown items box as block */
+        display: block;
+    }
+
+    /*-----------------------------------------------------------------------*/
+    .PlatzHalter1 {
+        margin-top: 70px;
+        width: 950px;
+        height: 240px;
+        top: 68px;
+        right: 598px;
+        bottom: 460px;
+    }
+
+    .column {
+        display: inline-block;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .column img {
+            height: 210px;
+            width: 200px;
+            border: 2px solid white;
+            background-size: cover;
+            float: left;
+        }
+
+
+
+        .column p {
+            margin-top: 10px;
+            color: red;
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .column h4 {
+            margin-top: 0px;
+            height: 210px;
+            color: white;
+            font-size: 14px;
+            border: 2px solid white;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+    .PlatzHalter2 {
+        margin-left: 960px;
+        margin-top: -550px;
+        width: 950px;
+        height: 240px;
+        top: 68px;
+        right: 598px;
+        bottom: 460px;
+    }
+
+    .PlatzHalter3 {
+        margin-left: 960px;
+        margin-top: 70px;
+        width: 950px;
+        height: 240px;
+        top: 68px;
+        right: 598px;
+        bottom: 460px;
+        /* border: 1px solid #770e52;
+        */
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <a class="itemnodrop" href="start page.html"> <i class="fa fa-home"></i></a>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Game Story.html">  Game Story </a>
+                <i class="fa fa-book" style="color:saddlebrown; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Adventure.html">Adventure</a>
+                <a class="navbarlink" href="Shooter.html">Shooter</a>
+                <a class="navbarlink" href="Horror.html">Horror</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Game News.html"> Game News </a>
+                <i class="fa fa-newspaper-o" style="color:mediumvioletred; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Updates.html">Updates</a>
+                <a class="navbarlink" href="New.html">New</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Trophy Hunter.html"> Trophy Hunter </a>
+                <i class="fa fa-trophy" style="color: #778ED1; font-size: 20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Playstation Trophys.html">Playstation Trophys</a>
+                <a class="navbarlink" href="Xbox achievements.html">Xbox achievements</a>
+                <a class="navbarlink" href="PC achievements.html">PC achievements</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Top 5 Games.html">Top 5 Games</a>
+                <i class="fa fa-star" style="color:Orange; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="playstation exclusives.html">playstation exclusives</a>
+                <a class="navbarlink" href="Xbox exclusives.html">Xbox exclusives</a>
+                <a class="navbarlink" href="PC Spiele.html">PC Spiele</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Design Your Room.html"> Design Your Room</a>
+                <i class="fa fa-shopping-bag" style="color:pink; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Decoration.html">Decoration</a>
+                <a class="navbarlink" href="Clothing Brands.html">Clothing Brands</a>
+                <a class="navbarlink" href="Souls Items.html">Souls Items</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Share Your Moments.html">  Share Your Moments </a>
+                <i class="fa fa-heart" style="color:red; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="anmelde.php">Sign in</a>
+                <a class="navbarlink" href="login.php">Create new Account</a>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="PlatzHalter1">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="re.jpg">
+
+
+                <h4>
+                    <p>Resident Evil 7 </p>  <br> Resident Evil 7: Biohazard is set in mid-2017 somewhere in the southern United States,
+                    where there have been reports of "ghosts" sighted around the bayou of the town, Dulvey. The game proper takes place after
+                    the events of Beginning Hour, which ended with the murder of a three-man TV crew by the infected Baker family members Jack
+                    and Mia. It features a new protagonist named Ethan Winters, a civilian who offers fewer combat skills than most previous Resident Evil
+                    protagonists. Ethan is searching for his missing wife, Mia, which leads him to a derelict plantation mansion, home of the Baker family.
+
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="PlatzHalter1">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="evilw.jpg">
+
+
+                <h4 class="evilw">
+                    <p>The Evil Within </p>  <br>Detective Sebastian Castellanos and his partners are called to the scene of a mass murder at Beacon Mental Hospital.
+                    Upon arriving at the scene, there are bodies everywhere, with blood and gore splashed all over. When Sebastian finds a lone survivor, there is also a video feed.
+                    Sebastian rewinds it to see what happens. There is a video of a squad of policemen shooting at an unseen enemy before being cut down where they stand,
+                    a hooded figure standing there. The figure looks up and then appears behind Sebastian, which is when everything goes to hell. Quite literally.
+                    Sebastian is attacked and knocked out, and when he wakes up, it's in a nightmare. There is a cleaver wielding psycho, and humans hanging next to him
+                    like sacks of meat. He manages to get himself down, steal a key, and then run to escape the beast of a man behind him, but the asylum is not what it should be.
+                    Sebastian has fallen into a nightmare somehow, and it is just, all, bad.
+
+                </h4>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="PlatzHalter2">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="outlast.jpg">
+
+
+                <h4>
+                    <p>Outlast </p>  <br>Hell is an experiment you can't survive in Outlast, a first-person survival horror game developed by veterans of some
+                    of the biggest game franchises in history. As investigative journalist Miles Upshur, explore Mount Massive Asylum and try to survive long enough to
+                    discover its terrible secret... if yo
+
+                </h4>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="PlatzHalter3">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="little.png">
+
+
+                <h4>
+                    <p>Little Nightmare </p>  <br> Resident Evil 7: Biohazard is set in mid-2017 somewhere in the southern United States,
+                    where there have been reports of "ghosts" sighted around the bayou of the town, Dulvey. The game proper takes place after
+                    the events of Beginning Hour, which ended with the murder of a three-man TV crew by the infected Baker family members Jack
+                    and Mia. It features a new protagonist named Ethan Winters, a civilian who offers fewer combat skills than most previous Resident Evil
+                    protagonists. Ethan is searching for his missing wife, Mia, which leads him to a derelict plantation mansion, home of the Baker family.
+
+                </h4>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,378 @@
+<html>
+<head>
+    <titel></titel>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+    body {
+        background-image: url("shooterback.jpg");
+        background-repeat: no-repeat;
+        background-attachment: inherit;
+        background-size: cover;
+    }
+
+
+
+    .navbar { /*Menu Background */
+        background-color: rgb(159, 226, 191,0.2); /*White wit opacity*/
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+    }
+
+    .itemnodrop { /*Items in the Menu without Drop Menu*/
+        float: left;
+        font-size: 20px;
+        color: cadetblue;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 14px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        background-color: #F0F3F4;
+        transition: all 0.5s ease;
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+    }
+
+    .itemwithdrop { /*Items in the Menu with Drop Menu*/
+        font-size: 16px;
+        color: antiquewhite;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+    }
+
+
+    .dropdown { /*Items in the Menu with Drop Menu */
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropbtn { /*buttons Design in the Menu*/
+        border: none;
+        padding: 14px 32px;
+        background-color: inherit;
+        font-family: inherit;
+    }
+    /*----------------------------------------Hover on the button make the size of the Font bigger--------------------------------------------*/
+    .itemwithdrop:hover { /* Buttons on hover */
+        color: white;
+        font-size: 20px;
+    }
+
+    .dropdown:hover .dropbtn:hover { /* Buttons on hover */
+        background-color: red;
+        border-bottom: 3px solid white;
+        border-radius: 10px;
+    }
+
+    .itemnodrop:hover { /*Home Link On Hover*/
+        color: pink;
+        font-size: 22px;
+        background-color: cadetblue;
+        border-bottom: 3px solid white;
+        border-radius: 10px;
+    }
+
+    .dropdown-content { /*The Items inside the dropbox */
+        display: none;
+        position: relative;
+        background-color: #126478;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        border-bottom: 2px solid white;
+        border-radius: 10px;
+    }
+
+        .dropdown-content a { /* Link inside the dropbox*/
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            border-bottom: 2px solid white;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+        }
+
+            .dropdown-content a:hover { /*Mouse Hover on dropbox items*/
+                background-color: black;
+                color: orange;
+                font-family: "Courier New", monospace;
+                font-weight: bold;
+            }
+
+    .dropdown:hover .dropdown-content { /*dropdown items box as block */
+        display: block;
+    }
+
+    .txtheader { /*Be Part of our Story */
+        background-color: ghostwhite;
+        color: darkslategray;
+        position: absolute;
+        left: 32px;
+        top: 170px;
+        width: 500px;
+        text-align: center;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+
+    .PlatzHalter1 {
+        margin-top: 70px;
+        width: 950px;
+        height: 240px;
+        top: 68px;
+        right: 598px;
+        bottom: 460px;
+    }
+
+    .column {
+        display: inline-block;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .column img {
+            height: 210px;
+            width: 200px;
+            border: 2px solid white;
+            background-size: cover;
+            float: left;
+        }
+
+
+
+        .column p {
+            margin-top: 10px;
+            color: red;
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .column h4 {
+            margin-top: 0px;
+            height: 210px;
+            color: white;
+            font-size: 14px;
+            border: 2px solid white;
+            background-color: rgba(0,0,0,0.6);
+        }
+
+    .PlatzHalter2 {
+        margin-left: 960px;
+        margin-top: -550px;
+        width: 950px;
+        height: 240px;
+        top: 68px;
+        right: 598px;
+        bottom: 460px;
+    }
+
+    .PlatzHalter3 {
+        margin-left: 960px;
+        margin-top: 70px;
+        width: 950px;
+        height: 240px;
+        top: 68px;
+        right: 598px;
+        bottom: 460px;
+        /* border: 1px solid #770e52;
+        */
+    }
+</style>
+
+<body>
+
+
+    <div class="navbar">
+        <a class="itemnodrop" href="start page.html"> <i class="fa fa-home"></i></a>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Game Story.html">  Game Story </a>
+                <i class="fa fa-book" style="color:saddlebrown; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Adventure.html">Adventure</a>
+                <a class="navbarlink" href="Shooter.html">Shooter</a>
+                <a class="navbarlink" href="Horror.html">Horror</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Game News.html"> Game News </a>
+                <i class="fa fa-newspaper-o" style="color:mediumvioletred; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Updates.html">Updates</a>
+                <a class="navbarlink" href="New.html">New</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Trophy Hunter.html"> Trophy Hunter </a>
+                <i class="fa fa-trophy" style="color: #778ED1; font-size: 20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Playstation Trophys.html">Playstation Trophys</a>
+                <a class="navbarlink" href="Xbox achievements.html">Xbox achievements</a>
+                <a class="navbarlink" href="PC achievements.html">PC achievements</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Top 5 Games.html">Top 5 Games</a>
+                <i class="fa fa-star" style="color:Orange; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="playstation exclusives.html">playstation exclusives</a>
+                <a class="navbarlink" href="Xbox exclusives.html">Xbox exclusives</a>
+                <a class="navbarlink" href="PC Spiele.html">PC Spiele</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Design Your Room.html"> Design Your Room</a>
+                <i class="fa fa-shopping-bag" style="color:pink; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="Decoration.html">Decoration</a>
+                <a class="navbarlink" href="Clothing Brands.html">Clothing Brands</a>
+                <a class="navbarlink" href="Souls Items.html">Souls Items</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a class="itemwithdrop" href="Share Your Moments.html">  Share Your Moments </a>
+                <i class="fa fa-heart" style="color:red; font-size:20px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="navbarlink" href="anmelde.php">Sign in</a>
+                <a class="navbarlink" href="login.php">Create new Account</a>
+            </div>
+        </div>
+
+    </div>
+    <!------------------------------------------------------------------------------------------->
+
+
+    <div class="PlatzHalter1">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="sniper.png">
+
+
+                <h4>
+                    <p> Sniper Elite 3 </p>  <br> Sniper Elite 3 takes players to the unforgiving yet exotic terrain of WW2’s North Africa conflict in a battle against a deadly new foe.
+                    Equipped with Tiger tanks and the latest weaponry, WW2 Germany’s infamous Afrika Korps have the Allies outnumbered and outgunned.
+                    Worse still, intelligence indicates the Nazis are developing a super weapon that could destroy all hopes of victory.
+                    It must end here. You are the turning point. Because one bullet can change history
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="PlatzHalter1">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="battle.jpg">
+
+
+                <h4>
+                    <p> BATTLEFIELD 1 </p>  <br>The singleplayer campaign of Battlefield 1 takes place during World War 1 across six different "War Stories"
+                    which revolve around different people in different aspects of the Great War in campaigns such as the Italian Alps and the deserts of
+                    Arabia. Unlike past installments, the story offers a much larger sandbox to allow players more choice and variety in how they approach
+                    different situations.
+
+                </h4>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="PlatzHalter2">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="cod.jpg">
+
+
+                <h4>
+                    <p>Call of Duty ww2 </p>  <br>Call of Duty: World War II has, in many ways,
+                    been exactly the game the franchise needed after five years of increasingly
+                    futuristic entries with crazy movement schemes and over-the-top sci-fi elements.
+                    It's still very much in the mold of Call of Duty since Modern Warfare,
+                    but it's a refreshing return to gravity-based gameplay nonetheless.
+
+                </h4>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="PlatzHalter3">
+
+        <div class="row">
+            <div class="column">
+
+
+                <img src="BioShock.jpg">
+
+
+                <h4>
+                    <p>BioShock</p>  <br>BioShock is a shooter unlike any you've ever played,
+                    loaded with weapons and tactics never seen. You'll have a complete arsenal at your disposal
+                    from simple revolvers to grenade launchers and chemical throwers, but you'll also be forced
+                    to genetically modify your DNA to create an even more deadly.
+
+                </h4>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+</html>
